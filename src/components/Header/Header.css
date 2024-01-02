@@ -1,0 +1,101 @@
+.main_header {
+  width: 100%;
+  padding: 0 20px;
+  background-color: #212121;
+  color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 99;
+}
+@media only screen and (min-width: 768px) {
+  .main_header {
+    padding: 0 40px;
+  }
+}
+.main_header .header_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  .main_header .header_content {
+    height: 80px;
+  }
+}
+.main_header .header_content .left {
+  display: none;
+  list-style-type: none;
+  gap: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  .main_header .header_content .left {
+    display: flex;
+  }
+}
+.main_header .header_content .center {
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  .main_header .header_content .center {
+    font-size: 34px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.main_header .header_content .right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .main_header .header_content .right {
+    gap: 25px;
+  }
+}
+.main_header .header_content .right svg {
+  cursor: pointer;
+  font-size: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .main_header .header_content .right svg {
+    font-size: 24px;
+  }
+}
+.main_header .header_content .right .cart_icon {
+  position: relative;
+}
+.main_header .header_content .right .cart_icon span {
+  min-width: 20px;
+  text-align: center;
+  background-color: #8e2de2;
+  position: absolute;
+  top: -5px;
+  right: -12px;
+  line-height: 1;
+  border-radius: 10px;
+  padding: 2.5px;
+  font-size: 12px;
+}
+.main_header.sticky_header {
+  position: sticky;
+  top: 0;
+  animation: stickyHeader 0.3s ease forwards;
+}
+
+@keyframes stickyHeader {
+  0% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}/*# sourceMappingURL=Header.css.map */
